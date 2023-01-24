@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+    --primary-color: #2db2ea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 1em;
+}
+.logo {
+    text-align: center;
+    margin: 2em 0;
+}
+
+.content {
+    p.participate {
+        color: black;
+        text-align: center;
+        font-size: 1em;
+        margin-bottom: 0.5em;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 0.2em;
+        font-size: 1.7em;
+        span {
+            color: var(--primary-color);
+        }
+    }
+    p {
+        color: #747474;
+        text-align: center;
+        margin: 0 1.5em 1em;
+        font-size: 0.875em;
+    }
+}
+
+.login {
+    .email-case {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin: auto;
+
+        label {
+            color: var(--primary-color);
+            font-size: 0.875em;
+            width: 3.5em;
+            background-color: white;
+            position: relative;
+            left: 1.5em;
+            top: 0.7em;
+            text-align: center;
+            cursor: pointer;
+        }
+        label.pass {
+            color: var(--primary-color);
+            font-size: 0.875em;
+            width: 6.2em;
+            background-color: white;
+            position: relative;
+            left: 1.1em;
+            top: 0.7em;
+            text-align: center;
+            cursor: pointer;
+        }
+        input {
+            padding: 1em;
+            border: 1px solid rgb(221, 221, 221);
+            border-radius: 0.8em;
+        }
+
+        .forgot-password {
+            a {
+                float: right;
+                margin: 1.5em 0 1.2em;
+                color: black;
+                font-size: 0.8em;
+                font-weight: bold;
+            }
+        }
+        .login-button {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 0.8em 0;
+            border-radius: 0.5em;
+            font-weight: bold;
+            font-size: 1em;
+            border: transparent;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1f80a9;
+            }
+        }
+        .new-acc {
+            font-size: 0.8em;
+            font-weight: bold;
+            margin: 1.5em 0 1.5em;
+        }
+        .register {
+            background-color: white;
+            color: var(--primary-color);
+            padding: 0.8em 0;
+            border-radius: 0.5em;
+            font-weight: bold;
+            font-size: 1em;
+            border: 1px solid var(--primary-color);
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--primary-color);
+                color: white;
+            }
+        }
+        p.version {
+            margin: 2em 0;
+            color: gray;
+            font-size: 0.7em;
+            letter-spacing: 1px;
+        }
+    }
+}
+@media only screen and (min-width: 480px) {
+    .container {
+        padding: 0 2em 1em;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        margin: 0;
+        padding: 0;
+    }
+    .background {
+        background: url("/images/background.jpg") no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+    .background-color {
+        height: 100%;
+        width: 100%;
+        background-color: #2db2ea;
+        opacity: 0.7;
+        position: absolute;
+    }
+
+    .container {
+        width: 60%;
+        padding-top: 1.5em;
+        background-color: white;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .logo {
+        padding-top: 1.5em;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1080px) {
+    .container {
+        width: 55%;
+        height: 80%;
+        margin: 3.5em auto;
+        border-radius: 2em;
+    }
+    .block {
+        display: flex;
+
+        .content {
+            width: 50%;
+            height: 100%;
+
+            .participate {
+                margin: 1em 0 0.7em;
+            }
+            h2 {
+                margin-bottom: 0.7em;
+            }
+            p {
+                margin: 0 4em;
+                line-height: 3em;
+            }
+        }
+        .login {
+            width: 50%;
+            .email-case {
+                margin-right: 3em;
+                margin-left: 1em;
+                input {
+                    width: 120%;
+                }
+                .forgot-password {
+                    width: 130%;
+                }
+
+                .login-button {
+                    width: 130%;
+                }
+                .register {
+                    width: 130%;
+                }
+            }
+        }
+    }
+}
